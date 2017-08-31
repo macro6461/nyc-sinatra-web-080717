@@ -1,10 +1,6 @@
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Year Completed</th>
-  </tr>
-  <tr>
-    <td><%= @landmark.name %></td>
-    <td><%= @landmark.year_completed %></td>
-  </tr>
-<table>
+<h2><%= @landmark.name %></h2>
+<h2><%= @landmark.year_completed %></h2>
+
+<form action='/landmarks' method="GET">
+<input type="submit" value="back to list">
+</form>
